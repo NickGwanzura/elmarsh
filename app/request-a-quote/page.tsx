@@ -1,0 +1,7 @@
+import type { Metadata } from "next";
+import { CheckCircle2, Phone } from "lucide-react";
+import { PageHero } from "@/components/PageHero";
+import { QuoteForm } from "@/components/QuoteForm";
+import { pageMetadata, site } from "@/lib/site";
+export const metadata: Metadata = pageMetadata("Request a Quote", "Request a logistics quote for vehicle shipping, storage, loading, collection, port delivery or cargo handling.");
+export default function Quote(){return <><PageHero eyebrow="Request a quote" title="Tell us what you need to move" description="Share the cargo, collection point and destination. The more detail you provide, the more accurately we can assess the requirement." image="https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=1800&q=85"/><section className="section section-alt"><div className="container quote-wrap"><aside className="quote-intro"><span className="eyebrow">Quote details</span><h2>A clear route starts here.</h2><p>Upload photos and include dimensions where possible. For vehicles, include the make, model and whether it runs.</p><div className="feature-list"><span><CheckCircle2/> No-obligation enquiry</span><span><CheckCircle2/> Direct team response</span><span><CheckCircle2/> UK-wide collection</span></div><p><strong>Prefer to call?</strong></p>{site.phones.map(p=><a className="text-link" key={p.name} href={p.href}><Phone size={16}/>{p.name}: {p.display}</a>)}</aside><QuoteForm/></div></section></>}
