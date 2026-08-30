@@ -9,8 +9,8 @@ export const site = {
   tagline: "Safe. Reliable. Secure Logistics.",
   address: ["3 Old Thrapston Road", "Huntingdon", "PE28 5AD", "United Kingdom"],
   phones: [
-    { name: "Marshall", display: "0044 7729 441623", href: "tel:+447729441623" },
-    { name: "Kay", display: "0044 7908 564773", href: "tel:+447908564773" },
+    { name: "Marshall", display: "+44 7729 441623", href: "tel:+447729441623" },
+    { name: "Kay", display: "+44 7908 564773", href: "tel:+447908564773" },
   ],
   email: "enquiries@elmarshlogistics.co.uk",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://elmarshlogistics.co.uk",

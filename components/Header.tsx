@@ -17,7 +17,7 @@ export function Header() {
   const pathname = usePathname();
   useEffect(() => setOpen(false), [pathname]);
   return <header className="site-header">
-    <div className="topline"><div className="container top-inner"><span>Operating from Huntingdon, United Kingdom</span><a href="tel:+447729441623"><Phone size={14}/> 07729 441623</a></div></div>
+    <div className="topline"><div className="container top-inner"><span>Operating from Huntingdon, United Kingdom</span><a href="tel:+447729441623"><Phone size={14}/> +44 7729 441623</a></div></div>
     <nav className="container nav" aria-label="Primary navigation">
       <Link className="brand brand-logo" href="/" aria-label="Elmarsh Logistics home"><Image src="/images/elmarsh-logo.png" alt="" width={1684} height={706} priority sizes="(max-width: 760px) 130px, 160px"/></Link>
       <div className="desktop-links">{links.map(([label, href]) => <Link key={href} className={pathname === href ? "active" : ""} href={href}>{label}</Link>)}</div>

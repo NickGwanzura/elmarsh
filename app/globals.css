@@ -81,3 +81,5 @@ body{font-family:var(--font-source-sans),"Source Sans 3",Arial,sans-serif}
 .socials a:hover{transform:translateY(-2px)}
 .footer-bottom{margin-top:66px;padding:24px 0;color:#748092}
 @media(max-width:760px){.brand-logo img{height:54px}.nav{height:72px}.footer{padding-top:64px}.footer-grid{gap:40px}.footer-logo{width:270px}.footer-bottom{margin-top:48px}}
+.text-link{min-height:44px;padding-block:8px}
+.page-hero .hero-overlay{background:linear-gradient(90deg,rgba(3,14,25,.9) 0%,rgba(3,14,25,.5) 58%,rgba(3,14,25,.2) 100%)}
