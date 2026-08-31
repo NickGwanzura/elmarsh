@@ -6,7 +6,7 @@ import {
 
 export const site = {
   name: "Elmarsh Logistics Ltd",
-  tagline: "Safe. Reliable. Secure Logistics.",
+  tagline: "Your one-stop shop for truck sales and logistics.",
   address: ["3 Old Thrapston Road", "Huntingdon", "PE28 5AD", "United Kingdom"],
   phones: [
     { name: "Marshall", display: "+44 7729 441623", href: "tel:+447729441623" },
@@ -17,6 +17,7 @@ export const site = {
 };
 
 export const services = [
+  { title: "Truck Sales", text: "Source and purchase trucks with practical support from selection through collection and delivery.", icon: Truck },
   { title: "Vehicle Shipping", text: "Collection, storage, loading and port delivery support for cars, vans and trucks.", icon: Car },
   { title: "Vehicle Loading Facilities", text: "Professional loading for vehicles, machinery and other wheeled cargo.", icon: Forklift },
   { title: "Vehicle Storage & Parking", text: "Secure temporary parking at our Huntingdon logistics yard.", icon: Warehouse },

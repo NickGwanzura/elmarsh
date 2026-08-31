@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 const links = [
   ["Home", "/"], ["About", "/about"], ["Services", "/services"],
   ["Vehicle Shipping", "/vehicle-shipping"], ["Storage & Loading", "/vehicle-storage-loading"],
-  ["Cargo Handling", "/cargo-handling"], ["Contact", "/contact"],
+  ["Cargo Handling", "/cargo-handling"], ["Past Works", "/past-works"], ["Contact", "/contact"],
 ];
 
 export function Header() {
