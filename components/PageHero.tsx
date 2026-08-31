@@ -1,2 +1,7 @@
 import Image from "next/image";
-export function PageHero({ eyebrow, title, description, image }: { eyebrow: string; title: string; description: string; image: string }) { return <section className="page-hero"><Image src={image} alt="Elmarsh logistics operations" fill priority sizes="100vw"/><div className="hero-overlay"/><div className="container page-hero-content"><span className="eyebrow">{eyebrow}</span><h1>{title}</h1><p>{description}</p></div></section> }
+
+const pageHeaderImage = "/images/customer/elmarsh-1.jpg";
+
+export function PageHero({ eyebrow, title, description, image }: { eyebrow: string; title: string; description: string; image: string }) {
+  return <section className="page-hero"><Image src={pageHeaderImage} alt="Elmarsh logistics operations" fill priority sizes="100vw"/><div className="hero-overlay"/><div className="container page-hero-content"><span className="eyebrow">{eyebrow}</span><h1>{title}</h1><p>{description}</p></div></section>;
+}
