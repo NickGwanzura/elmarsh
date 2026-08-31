@@ -117,6 +117,27 @@ body{font-family:var(--font-source-sans),"Source Sans 3",Arial,sans-serif}
 @media(max-width:1100px){.hero{min-height:720px}}
 @media(max-width:760px){.hero{min-height:700px}.hero-content{padding-block:78px}}
 
+/* Three-step quote flow */
+.quote-progress{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:-8px 0 30px;padding-bottom:24px;border-bottom:1px solid var(--line)}
+.quote-progress button{display:flex;align-items:center;gap:9px;padding:0;border:0;background:none;color:#8490a0;font-size:12px;font-weight:800;text-align:left;cursor:pointer}
+.quote-progress button span{display:grid;place-items:center;width:30px;height:30px;border:1px solid #cbd4dc;border-radius:999px;font-size:12px}
+.quote-progress button.active,.quote-progress button.complete{color:var(--navy)}
+.quote-progress button.active span{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+.quote-progress button.complete span{background:var(--navy);border-color:var(--navy);color:#fff}
+.quote-step-heading{margin-bottom:24px}.quote-step-heading span{display:block;color:var(--gold-deep);font-size:11px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}.quote-step-heading h3{margin:4px 0 0;color:var(--navy);font-size:25px;letter-spacing:-.02em}
+.quote-step[hidden]{display:none}
+.quote-actions{display:flex;justify-content:flex-end;gap:12px;margin-top:28px;padding-top:22px;border-top:1px solid var(--line)}
+.button-outline-dark{background:transparent;color:var(--navy);border-color:#c7d0d8;box-shadow:none}.button-outline-dark:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+@media(max-width:560px){.quote-progress{gap:4px}.quote-progress button{flex-direction:column;align-items:flex-start;gap:5px;font-size:10px}.quote-step-heading h3{font-size:22px}.quote-actions{justify-content:stretch}.quote-actions .button{flex:1}}
+
+/* Contact page hierarchy */
+.contact-section{background:linear-gradient(180deg,#fff 0%,#fbfaf6 100%)}
+.contact-layout{display:grid;grid-template-columns:.85fr 1.35fr .8fr;gap:26px;align-items:stretch}
+.contact-intro{padding:24px 8px 24px 0}.contact-intro h2{font-size:clamp(34px,4vw,52px);line-height:1.08;letter-spacing:-.04em;margin:8px 0 18px}.contact-intro p{max-width:34ch;color:var(--slate);font-size:17px;margin:0 0 28px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.contact-card{padding:22px;border:1px solid var(--line);border-radius:12px;background:#fff;box-shadow:0 9px 24px rgba(6,26,56,.045);transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}.contact-card:hover{transform:translateY(-4px);border-color:#d9b85d;box-shadow:0 16px 30px rgba(6,26,56,.1)}.contact-icon{display:grid;place-items:center;width:42px;height:42px;margin-bottom:18px;border-radius:11px;background:var(--cream);color:var(--gold-deep)}.contact-icon svg{width:19px}.contact-label{display:block;color:var(--gold-deep);font-size:10px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.contact-card h3{margin:5px 0 6px;font-size:17px;color:var(--navy)}.contact-card a{font-size:14px;word-break:break-word}.contact-card p{font-size:13px;color:var(--slate);margin:5px 0 0;line-height:1.55}.contact-yard{display:flex;flex-direction:column;align-items:flex-start;background:var(--navy);padding:30px;color:#fff}.contact-yard>svg{width:28px;height:28px;color:var(--gold-bright);margin-bottom:22px}.contact-yard .contact-label{color:var(--gold-bright)}.contact-yard h3{font-size:24px;line-height:1.2;margin:7px 0 12px}.contact-yard p{color:#c7d4dc;font-size:14px}.contact-yard .button{margin-top:auto}.contact-yard .button-outline{border-color:rgba(255,255,255,.65);color:#fff}
+@media(max-width:1100px){.contact-layout{grid-template-columns:1fr 1.4fr}.contact-yard{grid-column:1/-1;min-height:220px}.contact-yard .button{margin-top:16px}}
+@media(max-width:760px){.contact-layout{grid-template-columns:1fr;gap:30px}.contact-intro{padding:0}.contact-grid{grid-template-columns:1fr}.contact-yard{grid-column:auto}.contact-intro p{max-width:none}}
+
 /* Consistent black image treatment for stronger contrast */
 .hero-overlay{background:linear-gradient(90deg,rgba(2,10,20,.95) 0%,rgba(2,10,20,.78) 52%,rgba(2,10,20,.42) 100%)}
 .image-panel:after{content:"";position:absolute;inset:0;background:linear-gradient(145deg,rgba(2,10,20,.28),rgba(2,10,20,.12) 58%,rgba(2,10,20,.38));pointer-events:none}
