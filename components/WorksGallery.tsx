@@ -26,6 +26,10 @@ const works = [
   ["/images/works/work-22.jpg", "Truck recovery and delivery"],
   ["/images/works/work-23.jpg", "Yard-to-port logistics"],
   ["/images/works/work-24.jpg", "Mixed commercial cargo"],
+  ["/images/works/phoenix-convoy.jpg", "Phoenix fleet convoy"],
+  ["/images/works/machinery-haulage.jpg", "Machinery haulage"],
+  ["/images/works/road-marking.jpg", "Specialist equipment delivery"],
+  ["/images/works/fleet-convoy.jpg", "Fleet convoy movement"],
 ] as const;
 
 export function WorksGallery({ preview = false }: { preview?: boolean }) {

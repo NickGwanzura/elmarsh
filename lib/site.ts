@@ -6,7 +6,7 @@ import {
 
 export const site = {
   name: "Elmarsh Logistics Ltd",
-  tagline: "Your one-stop shop for truck sales and logistics.",
+  tagline: "Seamless logistics from the UK to Southern Africa.",
   address: ["3 Old Thrapston Road", "Huntingdon", "PE28 5AD", "United Kingdom"],
   phones: [
     { name: "Marshall", display: "+44 7729 441623", href: "tel:+447729441623" },
