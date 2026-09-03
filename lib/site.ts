@@ -32,12 +32,26 @@ export const services = [
   { title: "Furniture", text: "Sofas, beds, tables, chairs, cabinets and office furniture.", icon: Armchair },
 ];
 
+function ogImage() {
+  return {
+    url: `${site.url}/images/elmarsh-logo.png`,
+    width: 1684,
+    height: 706,
+    alt: site.name,
+  };
+}
+
 export function pageMetadata(title: string, description: string): Metadata {
   return {
     title: `${title} | Elmarsh Logistics Ltd`,
     description,
     alternates: { canonical: `${site.url}${title === "Home" ? "" : `/${title.toLowerCase().replaceAll(" & ", "-").replaceAll(" ", "-")}`}` },
-    openGraph: { title: `${title} | Elmarsh Logistics Ltd`, description, type: "website", url: site.url, siteName: site.name },
-    twitter: { card: "summary_large_image", title: `${title} | Elmarsh Logistics Ltd`, description },
+    openGraph: { title: `${title} | Elmarsh Logistics Ltd`, description, type: "website", url: site.url, siteName: site.name, images: [ogImage()] },
+    twitter: {
+      card: "summary_large_image",
+      title: `${title} | Elmarsh Logistics Ltd`,
+      description,
+      images: [ogImage().url],
+    },
   };
 }
