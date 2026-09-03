@@ -1,13 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
 import { WorksGallery } from "@/components/WorksGallery";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata = {
-  title: "Past Works | Elmarsh Logistics",
-  description: "A track record of truck sales, collections, loading, storage and commercial vehicle delivery by Elmarsh Logistics.",
-};
+export const metadata: Metadata = pageMetadata("Past Works", "A track record of truck sales, collections, loading, storage and commercial vehicle delivery by Elmarsh Logistics.");
 
 export default function PastWorksPage() {
   return <>
